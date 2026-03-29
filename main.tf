@@ -4,10 +4,6 @@ data "aws_availability_zones" "available" {
 
 data "aws_region" "current" {}
 
-locals {
-  azs = slice(data.aws_availability_zones.available.names, 0, 3)
-}
-
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "6.6.0"
@@ -15,7 +11,7 @@ module "vpc" {
   name = var.project_name
   cidr = var.vpc_cidr
 
-  azs             = local.azs
+  azs             = slice(data.aws_availability_zones.available.names, 0, 3)
   private_subnets = var.vpc_private_subnets
   public_subnets  = var.vpc_public_subnets
 
