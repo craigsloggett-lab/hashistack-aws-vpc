@@ -35,7 +35,7 @@ output "nat_gateway_public_ip" {
 
 output "availability_zones" {
   description = "Availability zones used by the VPC."
-  value       = local.azs
+  value       = module.vpc.azs
 }
 
 output "vpc_endpoint_security_group_id" {
