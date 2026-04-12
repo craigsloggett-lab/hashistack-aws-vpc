@@ -77,26 +77,26 @@ existing_vpc = {
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.7 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | 6.39.0 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_aws"></a> [aws](#provider\_aws) | 6.39.0 |
 
 ## Modules
 
 | Name | Source | Version |
-|------|--------|---------|
+| ---- | ------ | ------- |
 | <a name="module_vpc"></a> [vpc](#module\_vpc) | terraform-aws-modules/vpc/aws | 6.6.1 |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | Tags to apply to all resources. | `map(string)` | `{}` | no |
 | <a name="input_enable_vpc_endpoints"></a> [enable\_vpc\_endpoints](#input\_enable\_vpc\_endpoints) | VPC endpoints to provision. S3, Secrets Manager, and EC2 are enabled by default. | <pre>object({<br/>    s3             = optional(bool, true)<br/>    secretsmanager = optional(bool, true)<br/>    ec2            = optional(bool, true)<br/>    kms            = optional(bool, false)<br/>    ssm            = optional(bool, false)<br/>    ssm_messages   = optional(bool, false)<br/>    ec2_messages   = optional(bool, false)<br/>  })</pre> | `{}` | no |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Name prefix for all resources. | `string` | n/a | yes |
@@ -108,7 +108,7 @@ existing_vpc = {
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_security_group.vpc_endpoints](https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/security_group) | resource |
 | [aws_vpc_endpoint.ec2](https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/vpc_endpoint) | resource |
 | [aws_vpc_endpoint.ec2_messages](https://registry.terraform.io/providers/hashicorp/aws/6.39.0/docs/resources/vpc_endpoint) | resource |
@@ -124,7 +124,7 @@ existing_vpc = {
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_availability_zones"></a> [availability\_zones](#output\_availability\_zones) | Availability zones used by the VPC. |
 | <a name="output_nat_gateway_public_ip"></a> [nat\_gateway\_public\_ip](#output\_nat\_gateway\_public\_ip) | Public IP of the NAT gateway. |
 | <a name="output_private_route_table_ids"></a> [private\_route\_table\_ids](#output\_private\_route\_table\_ids) | IDs of the private route tables. |
