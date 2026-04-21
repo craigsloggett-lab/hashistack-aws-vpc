@@ -79,13 +79,13 @@ existing_vpc = {
 | Name | Version |
 | ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.7 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 6.40.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 6.41.0 |
 
 ## Providers
 
 | Name | Version |
 | ---- | ------- |
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.40.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.41.0 |
 
 ## Modules
 
@@ -109,17 +109,17 @@ existing_vpc = {
 
 | Name | Type |
 | ---- | ---- |
-| [aws_security_group.vpc_endpoints](https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/security_group) | resource |
-| [aws_vpc_endpoint.ec2](https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/vpc_endpoint) | resource |
-| [aws_vpc_endpoint.ec2_messages](https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/vpc_endpoint) | resource |
-| [aws_vpc_endpoint.kms](https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/vpc_endpoint) | resource |
-| [aws_vpc_endpoint.s3](https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/vpc_endpoint) | resource |
-| [aws_vpc_endpoint.secretsmanager](https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/vpc_endpoint) | resource |
-| [aws_vpc_endpoint.ssm](https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/vpc_endpoint) | resource |
-| [aws_vpc_endpoint.ssm_messages](https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/vpc_endpoint) | resource |
-| [aws_vpc_security_group_ingress_rule.vpc_endpoints_https](https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/resources/vpc_security_group_ingress_rule) | resource |
-| [aws_availability_zones.available](https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/availability_zones) | data source |
-| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/6.40.0/docs/data-sources/region) | data source |
+| [aws_security_group.vpc_endpoints](https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/security_group) | resource |
+| [aws_vpc_endpoint.ec2](https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/vpc_endpoint) | resource |
+| [aws_vpc_endpoint.ec2_messages](https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/vpc_endpoint) | resource |
+| [aws_vpc_endpoint.kms](https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/vpc_endpoint) | resource |
+| [aws_vpc_endpoint.s3](https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/vpc_endpoint) | resource |
+| [aws_vpc_endpoint.secretsmanager](https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/vpc_endpoint) | resource |
+| [aws_vpc_endpoint.ssm](https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/vpc_endpoint) | resource |
+| [aws_vpc_endpoint.ssm_messages](https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/vpc_endpoint) | resource |
+| [aws_vpc_security_group_ingress_rule.vpc_endpoints_https](https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/resources/vpc_security_group_ingress_rule) | resource |
+| [aws_availability_zones.available](https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/availability_zones) | data source |
+| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/6.41.0/docs/data-sources/region) | data source |
 
 ## Outputs
 
