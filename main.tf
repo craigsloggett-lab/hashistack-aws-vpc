@@ -6,7 +6,7 @@ data "aws_region" "current" {}
 
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "6.6.1"
+  version = "6.7.0"
 
   name = var.project_name
   cidr = var.vpc_cidr
